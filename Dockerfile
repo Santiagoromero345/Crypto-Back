@@ -4,7 +4,7 @@ WORKDIR /app
 
 # COPY go.mod go.sum and download dependencies
 # Descargar e instalar dependencias
-COPY go.* .
+COPY go.* ./
 RUN go mod download
 
 # COPY the source code an build
